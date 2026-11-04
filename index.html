@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Status Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🖥️ Server Status Dashboard</h1>
+        <p id="time"></p>
+    </header>
+
+    <section class="card">
+        <h2>Server Information</h2>
+
+        <div class="info-grid">
+            <div><strong>Hostname</strong></div>
+            <div>vultr-testing</div>
+
+            <div><strong>Operating System</strong></div>
+            <div>Ubuntu 24.04</div>
+
+            <div><strong>Web Server</strong></div>
+            <div>NGINX</div>
+
+            <div><strong>PHP Version</strong></div>
+            <div>8.3</div>
+
+            <div><strong>Database</strong></div>
+            <div>MariaDB 11.4</div>
+
+            <div><strong>Redis</strong></div>
+            <div>Running</div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Resource Usage</h2>
+
+        <p>CPU Usage <span id="cpuValue">65%</span></p>
+        <div class="progress">
+            <div class="bar" id="cpuBar"></div>
+        </div>
+
+        <p>Memory Usage <span id="memoryValue">48%</span></p>
+        <div class="progress">
+            <div class="bar" id="memoryBar"></div>
+        </div>
+
+        <p>Disk Usage <span id="diskValue">72%</span></p>
+        <div class="progress">
+            <div class="bar" id="diskBar"></div>
+        </div>
+
+    </section>
+
+    <section class="card">
+        <h2>Services</h2>
+
+        <ul class="services">
+            <li>🟢 NGINX Running</li>
+            <li>🟢 PHP-FPM Running</li>
+            <li>🟢 MariaDB Running</li>
+            <li>🟢 Redis Running</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Recent Logs</h2>
+
+        <ul class="logs">
+            <li>[13:05] Backup completed successfully</li>
+            <li>[13:10] SSL certificate renewed</li>
+            <li>[13:18] Redis restarted</li>
+            <li>[13:20] Cache purged</li>
+        </ul>
+    </section>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
