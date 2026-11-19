@@ -27,5 +27,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/<user>/<repo>:latest
-            ghcr.io/<user>/<repo>:${{ github.sha }}
+            ghcr.io/misam02/server-status-dashboard:latest
+            ghcr.io/misam02/server-status-dashboard:${{ github.sha }}
